@@ -8,6 +8,7 @@
 		<title>WeatherApp by Brandon Ma</title>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<script src="jquery.min.js"></script>
+		<script src="Chart.min.js"></script>
 		<script src="scripts.js"></script>
 	</head>
 	
@@ -49,6 +50,37 @@
 			<div id="weatherList">
 			</div>
 			
+			<br >
+			
+			<h3 class="weekly">Data Charts</h3>
+			<hr>
+			
+			<div id="tabs-container">
+				<ul class="tabs-menu">
+					<li class="current"><a href="#tab-1">Temperature</a></li>
+					<li><a href="#tab-2">Wind</a></li>
+					<li><a href="#tab-3">Humidity</a></li>
+					<li><a href="#tab-4">Pressure</a></li>
+				</ul>
+				<div class="tab" style="color: black">
+					<div id="tab-1" class="tab-content">
+						<canvas id="tempChart" width="400" height="400"></canvas>
+					</div>
+					<div id="tab-2" class="tab-content">
+						<canvas id="windChart" width="400" height="400"></canvas>
+					</div>
+					<div id="tab-3" class="tab-content">
+						<canvas id="humidityChart" width="400" height="400"></canvas>
+					</div>
+					<div id="tab-4" class="tab-content">
+						<canvas id="pressureChart" width="400" height="400"></canvas>
+					</div>
+				</div>
+			</div>
+			
 		</div>
+		
+		
+		
 	</body>
 </html>
