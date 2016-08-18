@@ -14,13 +14,13 @@ $(document).ready(function() {
 	});
 	
 	$(".tabs-menu span").click(function(event) {
-        event.preventDefault();
-        $(this).parent().addClass("current");
-        $(this).parent().siblings().removeClass("current");
-        var tab = $(this).attr("data");
-        $(".tab-content").not("#"+tab).css("display", "none");
-        $("#"+tab).fadeIn();
-    });
+		event.preventDefault();
+		$(this).parent().addClass("current");
+		$(this).parent().siblings().removeClass("current");
+		var tab = $(this).attr("data");
+		$(".tab-content").not("#"+tab).css("display", "none");
+		$("#"+tab).fadeIn();
+	});
 });
 
 function getWeather() {
