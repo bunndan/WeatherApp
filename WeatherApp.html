@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<!-- Made by Brandon Ma. August 17, 2016 -->
-	<!-- Background image taken by Brandon Ma in Japan, 2016 -->
+	<!-- Background image taken by Brandon Ma in Japan, 2014 -->
+	<!-- Weather icons made by LavAna, http://lavana.deviantart.com/ -->
 	<head>
 		<meta charset="utf-8">
 		<title>WeatherApp by Brandon Ma</title>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<script src="jquery.min.js"></script>
 		<script src="scripts.js"></script>
-		
 	</head>
 	
 	<body class="mainBody">
-		
+		<div style="float: left;">Weather App - by Brandon Ma</div>
 		<div style="float: right;">
 			Search city:
 			<input id="city" name="" type="text" value="Toronto">
@@ -23,73 +23,32 @@
 			<div class="today-data">
 				<div class="main-left">
 					<div class="city-header-info">
-						<div id="cityName">Toronto, ON</div>
-						<div id="weathericonMain">
-							<img src="assets/white/30.png" alt="current weather">
+						<div class="city-details">
+							<div id="cityName"></div>
+							<div id="cityWeather"></div>
+						</div>
+						<div class="weathericon">
+							<img id="weathericonMain" src="assets/01d.png" alt="current weather">
 						</div>
 					</div>
-					<div id="cityTemp">26&deg;</div>
+					<div class="city-temp"><span id="cityTemp"></span>&deg;</div>
 				</div>
 				<div class="main-right">
-					<div class="right-row">
-						Humidity: _________
-					</div>
+					<div>High: <div><span id="daytimeHigh"></span>&deg; C</div></div>
+					<div>Low: <div><span id="daytimeLow"></span>&deg; C</div></div>
+					<div>Wind: <div><span id="wind"></span> m/s</div></div>
+					<div>Humidity: <div><span id="humidity"></span> %</div></div>
+					<div>Pressure: <div><span id="pressure"></span> hPa</div></div>
+					<div>Cloudiness: <div><span id="cloudiness"></span></div></div>
 				</div>
 			</div>
 			
 			
+			<h3 class="weekly">Weekly Forecast</h3>
+			<hr>
 			<div id="weatherList">
-			
-				<h3>Forecast</h3>
-				<hr>
-				
-				<div class="date-row">
-					<h3 class="date-name">Monday</h3>
-					<span class="date-weathericon"><img src="assets/white/30.png" alt="current weather"></span>
-					<h3 class="date-temperature">26&deg; / 35&deg;</h3>
-				</div>
-				<hr>
-				<div class="date-row">
-					<h3 class="date-name">Tuesday</h3>
-					<span class="date-weathericon"><img src="assets/white/31.png" alt="current weather"></span>
-					<h3 class="date-temperature">26&deg; / 35&deg;</h3>
-				</div>
-				<hr>
-				<div class="date-row">
-					<h3 class="date-name">Wednesday</h3>
-					<span class="date-weathericon"><img src="assets/white/11.png" alt="current weather"></span>
-					<h3 class="date-temperature">26&deg; / 35&deg;</h3>
-				</div>
-				<hr>
-				<div class="date-row">
-					<h3 class="date-name">Thursday</h3>
-					<span class="date-weathericon"><img src="assets/white/36.png" alt="current weather"></span>
-					<h3 class="date-temperature">26&deg; / 35&deg;</h3>
-				</div>
-				<hr>
-				<div class="date-row">
-					<h3 class="date-name">Friday</h3>
-					<span class="date-weathericon"><img src="assets/white/27.png" alt="current weather"></span>
-					<h3 class="date-temperature">26&deg; / 35&deg;</h3>
-				</div>
-				<hr>
-				<div class="date-row">
-					<h3 class="date-name">Saturday</h3>
-					<span class="date-weathericon"><img src="assets/white/20.png" alt="current weather"></span>
-					<h3 class="date-temperature">26&deg; / 35&deg;</h3>
-				</div>
-				
 			</div>
-			
-			
-			
 			
 		</div>
-		
 	</body>
 </html>
-
-
-
-
-

@@ -1,3 +1,6 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
 .mainBody {
     width: 100%;
     max-width: 650px;
@@ -9,39 +12,46 @@
 }
 .container {
 	background-color: rgba(40, 72, 113, 0.85);
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	padding-bottom: 16px;
 }
 
 .today-data {
 	margin: 0;
 	overflow: hidden;
-	line-height: 50px;
 }
 .main-left {
 	float: left;
-	width: 60%;
+	width: 53%;
 	height: 250px;
+	line-height: 50px;
 }
 .city-header-info {
 	height: 40%;
 	width: auto;
-    font-size: 26px;
     padding-left: 3%;
 }
-#cityName {
+.city-details {
 	float: left;
 	padding-top: 5%;
 }
-#weathericonMain {
+#cityName {
+    font-size: 26px;
+}
+#cityWeather {
+	margin-top: -20px;
+	overflow: auto;
+	float: left;
+}
+.weathericon {
 	float: right;
 	height: 100%;
+	margin-right: 3%;
 }
-#weathericonMain img {
+#weathericonMain {
 	height: 95%;
 	padding-top: 5%;
 }
-#cityTemp {
+.city-temp {
 	padding-left: 20px;
     font-size: 155px;
     height: 70%;
@@ -54,8 +64,17 @@
 	height: 250px;
 	overflow: auto;
     padding-left: 15px;
+	margin: 30px 0 -30px 0;
+	line-height: 35px;
+}
+.main-right div div {
+	float: right;
+	padding-right: 20px;
 }
 
+.weekly {
+    padding: 0% 1.5%;
+}
 #weatherList {
     padding: 0% 1.5%;
 }
