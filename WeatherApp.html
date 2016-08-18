@@ -1,14 +1,60 @@
 <!DOCTYPE html>
 <html>
 	<!-- Made by Brandon Ma. August 17, 2016 -->
+	<!-- Background image taken by Brandon Ma in Japan, 2016 -->
 	<head>
 		<meta charset="utf-8">
 		<title>WeatherApp by Brandon Ma</title>
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="jquery.min.js"></script>
 		<script src="scripts.js"></script>
+		
 	</head>
 	
 	<body class="mainBody">
+		
+		<div style="float: right;">
+			Search city:
+			<input id="city" name="" type="text" value="Toronto">
+			<input type="button" value="Go" id="search" onclick="getWeather()" />
+		</div>
+		
+		<div class="container" style="clear: both;">
+			<div class="row">
+				<div class="main-left">
+					<div class="city-header-info">
+						<div id="city-name">Toronto, ON</div>
+						<div id="weathericon-main">
+							<img src="assets/white/30.png" alt="current weather">
+						</div>
+					</div>
+					<div id="city-temp">26&deg;</div>
+				</div>
+				<div class="main-right">
+					<div class="right-row">
+						Humidity: _________
+					</div>
+				</div>
+			</div>
+			
+			
+			<div id="weatherList">
+			
+			<h3>Forecast</h3>
+			
+			<div></div>
+			<hr class="style-one";>
+			<div></div>
+			<hr class="style-one";>
+			<div></div>
+			<div></div>
+			
+			</div>
+			
+			
+			
+			
+		</div>
 		
 	</body>
 </html>
