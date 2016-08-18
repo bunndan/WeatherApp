@@ -1,3 +1,5 @@
+/* Weather App stylesheet - Brandon Ma 2016 */
+
 body {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -58,7 +60,6 @@ body {
     line-height: 1;
 	margin-top: -5%;
 }
-
 .main-right {
 	border-left: 1px white;
 	height: 250px;
@@ -71,7 +72,6 @@ body {
 	float: right;
 	padding-right: 20px;
 }
-
 .weekly {
     padding: 0% 1.5%;
 }
@@ -100,11 +100,9 @@ body {
 	float: right;
 	padding-right: 2%;
 }
-
 h3 {
     margin: 5px;
 }
-
 hr {
 	clear: both;
     border: 0;
@@ -112,70 +110,52 @@ hr {
     background: #2a4c77;
     background-image: linear-gradient(to right, #2a4c77, #ccc, #ccc, #2a4c77);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .tabs-menu {
     height: 30px;
     clear: both;
 	margin: 0;
 }
-
 .tabs-menu li {
     height: 30px;
     line-height: 30px;
     float: left;
     margin-right: 10px;
-    background-color: #ccc;
-    border-top: 1px solid #d4d4d1;
-    border-right: 1px solid #d4d4d1;
-    border-left: 1px solid #d4d4d1;
+    background-color: rgba(30, 15, 88, 0.65);
 	list-style: none;
 }
-
 .tabs-menu li.current {
     position: relative;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.85);
     border-bottom: 1px solid #fff;
     z-index: 5;
 }
 
-.tabs-menu li a {
+.tabs-menu li span {
     padding: 10px;
-    text-transform: uppercase;
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
+	cursor: pointer;
 }
-
-.tabs-menu .current a {
-    color: #2e7da3;
+.tabs-menu .current span {
+    color: #09384e;
 }
-
 .tab {
 	background-color: rgba(40, 72, 113, 0.85);
     float: left;
     margin-bottom: 20px;
     width: 100%;
 }
-
 .tab-content {
     max-width: 650px;
     padding: 20px;
     display: none;
 }
-
-#tab-1 {
+.tab-content div {
+	padding-left: 6%;
+}
+#temperatureTab {
 	display: block;   
+}
+canvas {
+	height: 400px;
 }

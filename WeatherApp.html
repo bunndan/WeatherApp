@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<!-- Made by Brandon Ma. August 17, 2016 -->
-	<!-- Background image taken by Brandon Ma in Japan, 2014 -->
-	<!-- Weather icons made by LavAna, http://lavana.deviantart.com/ -->
+	<!-- Background image taken by Brandon Ma in Tokyo, Japan. 2014 -->
+	<!-- Weather icons made by LavAna: http://lavana.deviantart.com/ -->
+	<!-- Utilized Chart.js to generate the graphs: http://www.chartjs.org/ -->
 	<head>
 		<meta charset="utf-8">
 		<title>WeatherApp by Brandon Ma</title>
@@ -44,7 +45,6 @@
 				</div>
 			</div>
 			
-			
 			<h3 class="weekly">Weekly Forecast</h3>
 			<hr>
 			<div id="weatherList">
@@ -57,30 +57,31 @@
 			
 			<div id="tabs-container">
 				<ul class="tabs-menu">
-					<li class="current"><a href="#tab-1">Temperature</a></li>
-					<li><a href="#tab-2">Wind</a></li>
-					<li><a href="#tab-3">Humidity</a></li>
-					<li><a href="#tab-4">Pressure</a></li>
+					<li class="current"><span data="temperatureTab">Temperature</span></li>
+					<li><span data="windTab">Wind</span></li>
+					<li><span data="humidityTab">Humidity</span></li>
+					<li><span data="pressureTab">Pressure</span></li>
 				</ul>
-				<div class="tab" style="color: black">
-					<div id="tab-1" class="tab-content">
-						<canvas id="tempChart" width="400" height="400"></canvas>
+				<div class="tab">
+					<div id="temperatureTab" class="tab-content">
+						<div id="temperatureAvg"></div>
+						<canvas id="temperatureChart"></canvas>
 					</div>
-					<div id="tab-2" class="tab-content">
-						<canvas id="windChart" width="400" height="400"></canvas>
+					<div id="windTab" class="tab-content">
+						<div id="windAvg"></div>
+						<canvas id="windChart"></canvas>
 					</div>
-					<div id="tab-3" class="tab-content">
-						<canvas id="humidityChart" width="400" height="400"></canvas>
+					<div id="humidityTab" class="tab-content">
+						<div id="humidityAvg"></div>
+						<canvas id="humidityChart"></canvas>
 					</div>
-					<div id="tab-4" class="tab-content">
-						<canvas id="pressureChart" width="400" height="400"></canvas>
+					<div id="pressureTab" class="tab-content">
+						<div id="pressureAvg"></div>
+						<canvas id="pressureChart"></canvas>
 					</div>
 				</div>
 			</div>
 			
 		</div>
-		
-		
-		
 	</body>
 </html>
